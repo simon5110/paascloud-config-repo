@@ -57,7 +57,7 @@ paascloud:
       enable: false
       reliableMessageConsumer: false
       reliableMessageProducer: true
-      namesrvAddr: paascloud-mq-rocket:9876
+      namesrvAddr: localhost:9876
       instanceName: paascloud-provider-tpc
       producerGroup: PID_TPC
   oauth2:
@@ -70,7 +70,7 @@ paascloud:
       clientAuthenticationScheme: header
       tokenStore: jwt
   zk:
-    zkAddressList: paascloud-provider-zk:2181
+    zkAddressList: localhost:2181
     namespace: paascloud-elastic-job
   job:
     task:
